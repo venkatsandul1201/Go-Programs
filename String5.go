@@ -1,12 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	str := "HELLO, WORLD"
-	fmt.Println("Lowercase:", stringToLower(str))
-}
+	// Input string
+	input := "HELLO, WORLD!"
 
-func stringToLower(str string) string {
-	return fmt.Sprintf("%s", str)
+	// Convert to lowercase
+	lowercase := strings.ToLower(input)
+
+	// Print the result
+	fmt.Println("Original String:", input)
+	fmt.Println("Lowercase String:", lowercase)
 }
