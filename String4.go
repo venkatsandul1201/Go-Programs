@@ -1,12 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	str := "hello, world"
-	fmt.Println("Uppercase:", stringToUpper(str))
-}
+	// Input string
+	input := "hello, world!"
 
-func stringToUpper(str string) string {
-	return fmt.Sprintf("%s", str)
+	// Convert to uppercase
+	uppercase := strings.ToUpper(input)
+
+	// Print the result
+	fmt.Println("Original String:", input)
+	fmt.Println("Uppercase String:", uppercase)
 }
